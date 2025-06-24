@@ -1,11 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan's Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan's Personal Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header, section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h1, h2 {
+      color: #222;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 1.2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f0a500;
+    }
+
+    #about {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .post-preview {
+      margin: 1rem 0;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .social-links a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .social-links a img {
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Beranda</a></li>
+      <li><a href="postingan.html">📝 Postingan</a></li>
+      <li><a href="tentang.html">👤 Tentang Saya</a></li>
+      <li><a href="kontak.html">📬 Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- ABOUT / PERKENALAN -->
+  <header id="about">
+    <h1>Welcome to Ryan's blog</h1>
+    <h4>Laki-laki biasa, yang berdrama dengan emosi, kata, mimpi, dan cita-cita di dunia digital yang merambak.</h4>
+    <p>Saya adalah mahasiswa yang sedang belajar dan mengejar ketertinggalan dalam dunia pengembangan web dan teknologi. Website ini adalah ruang pribadi saya untuk menulis, bercerita, dan merekam jejak perjalanan belajar saya.</p>
+  </header>
+
+  <!-- POSTINGAN TERBARU -->
+  <section id="recent-posts">
+    <h2>📌 Postingan Terbaru</h2>
+
+    <div class="post-preview">
+      <h3><a href="postingan/surat-masa-depan.html">Surat untuk Diriku di Masa Depan</a></h3>
+      <p>Refleksi personal tentang impian, ketakutan, dan hal-hal yang belum sempat saya selesaikan di masa kuliah.</p>
+    </div>
+
+    <div class="post-preview">
+      <h3><a href="postingan/curhat-semester-8.html">Curhat Semester 8</a></h3>
+      <p>Gimana rasanya ada di ujung kuliah tapi merasa belum siap? Di sini saya jujur tentang semua itu.</p>
+    </div>
+
+    <p><a href="postingan.html">Lihat semua postingan →</a></p>
+  </section>
+
+  <!-- KONTAK / MEDIA SOSIAL -->
+  <section id="contact">
+    <h2>Contacts</h2>
+    <p>Find me in media socials:</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/ryan_nicholas.44/" target="_blank" rel="noopener">
+        <img src="icon/instagram.png" alt="Instagram Icon">Instagram
+      </a>
+      <a href="https://www.tiktok.com/@ryan_nich_p" target="_blank" rel="noopener">
+        <img src="icon/tiktok.png" alt="Tiktok Icon">TikTok
+      </a>
+      <a href="https://www.linkedin.com/in/ryan-nicholas-purba/" target="_blank" rel="noopener">
+        <img src="icon/linkedin.png" alt="LinkedIn Icon">LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ryan's Personal Blog</p>
+  </footer>
+
 </body>
 </html>
